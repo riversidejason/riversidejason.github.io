@@ -3,9 +3,10 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Your Name — Academic Portfolio</title>
-  <meta name="description" content="Academic portfolio of Your Name: publications, talks, teaching, portfolio, blog, CV, and guide." />
-  <link rel="stylesheet" href="styles.css" />
+  <title>Jason Xu - Welcome!</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="pet-care.png">
+  <meta name="description" content="Academic portfolio of Jason Xu: About, research interests, teaching, CV, and qualifications" />
+  <link rel="stylesheet" href="index.css" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
 </head>
@@ -14,20 +15,23 @@
 
   <header class="site-header">
     <div class="brand">
-      <a href="/" class="site-title">Your Name / Site Title</a>
+      <p class="site-title">Jason Xu</p>
+      <!-- <a href="/" class="site-title">Yaning(Jason) Xu</a> -->
       <button class="nav-toggle" aria-expanded="false" aria-controls="topnav">
         ☰
         <span class="sr-only">Toggle navigation</span>
       </button>
     </div>
     <nav id="topnav" class="topnav" aria-label="Top">
-      <a href="#publications">Publications</a>
-      <a href="#talks">Talks</a>
+      <a href="#about">About</a>
+      <a href="#research">Research</a>
       <a href="#teaching">Teaching</a>
+      <a href="#projects">Projects</a>
       <a href="#portfolio">Portfolio</a>
+      <!-- <a href="#portfolio">Portfolio</a>
       <a href="#blog">Blog Posts</a>
-      <a href="#cv">CV</a>
-      <a href="#guide">Guide</a>
+      
+      <a href="#guide">Guide</a> -->
     </nav>
   </header>
 
@@ -35,58 +39,122 @@
     <!-- Sidebar -->
     <aside class="sidebar" aria-label="Profile">
       <div class="card profile">
-        <img class="avatar" src="https://via.placeholder.com/160x160.png?text=Photo" alt="Your portrait" />
-        <h1>Your Sidebar Name</h1>
-        <p class="muted">Short biography for the left-hand sidebar. One or two sentences works well.</p>
+        <img class="avatar" src="photo.JPG" alt="portrait" />
+        <h1>Jason Xu</h1>
+        <p class="muted">Master of Computer Science, Researcher @ McMaster University</p>
+        <p class="muted"></p>
 
         <ul class="links">
-          <li><a href="#" target="_blank" rel="noopener">🌍 Earth</a></li>
-          <li><a href="#" target="_blank" rel="noopener">🏫 Red Brick University</a></li>
-          <li><a href="mailto:you@email.com">✉️ Email</a></li>
-          <li><a href="#" target="_blank" rel="noopener">🔎 Google Scholar</a></li>
-          <li><a href="#" target="_blank" rel="noopener">🧑‍🔬 ORCID</a></li>
-          <li><a href="#" target="_blank" rel="noopener">📚 PubMed</a></li>
-          <li><a href="https://github.com/yourusername" target="_blank" rel="noopener">🐙 GitHub</a></li>
-          <li><a href="#" target="_blank" rel="noopener">📰 Bluesky</a></li>
+          <li><a href="https://www.eng.mcmaster.ca/cas/" target="_blank" rel="noopener">🏫 McMaster University</a></li>
+          <li><a href="https://uwaterloo.ca/math/" target="_blank" rel="noopener">🎓 University of Waterloo (alumni)</a></li>
+          <li><a href="https://www.linkedin.com/in/jason-xu-b6721b156/" target="_blank" rel="noopener">👔 LinkedIn</a></li>
+          <li><a href="./resume.pdf">📄 Resume/CV</a></li>
+          <li><a href="mailto:xuy200@mcmaster.ca">✉️ Email</a></li>
+                  
+       
+          <!-- <li><a href="#" target="_blank" rel="noopener">🔎 Google Scholar</a></li> -->
+          <li><a href="https://orcid.org/my-orcid?orcid=0009-0003-5015-1720" target="_blank" rel="noopener">🧑‍🔬 ORCID</a></li>
+          <!-- <li><a href="#" target="_blank" rel="noopener">📚 PubMed</a></li> -->
+          <li><a href="https://github.com/riversidejason" target="_blank" rel="noopener">👾 GitHub</a></li>
         </ul>
       </div>
 
-      <div class="card mini">
+      <!-- <div class="card mini">
         <h2>Contact</h2>
-        <p><strong>Office:</strong> Room 123, CS Building</p>
-        <p><strong>Office Hours:</strong> Wed 2–4pm</p>
-      </div>
+
+      </div> -->
+
     </aside>
 
     <!-- Main content -->
     <main id="main" class="content">
+      <!-- <section class="hero"> -->
       <section class="hero">
-        <h2>Academic Pages is a ready-to-fork GitHub Pages template for academic personal websites</h2>
-        <p>
-          This is the front page of a website built with GitHub Pages. You can fork this starter,
-          modify the configuration and Markdown files, add your own PDFs and other content, and have
-          your site live for free—no ads!
+        <h2 id = 'about'>About</h2>
+        <p>Hello! Thank you for dropping by 😁</p>
+        <p>I am a graduate student and researcher at McMaster, specializing in human-computer interaction and machine learning.
+        Before that, I completed my Bachelor’s degree in Mathematics at the University of Waterloo, with a focus on Combinatorics & Optimization and Computational Math.</p>
+        <p>Outside of research, my interests include bodybuilding, psychology and American Sign Language. Feel free to reach out if you'd like to connect or collaborate on research projects!
         </p>
-        <div class="cta-row">
-          <a class="btn primary" href="#guide">Read the Guide</a>
-          <a class="btn" href="#portfolio">See Portfolio</a>
+
+      </section>
+      <!-- <hr /> -->
+
+      <section aria-labelledby="research">
+        <h2 id="research"> Research</h2>
+        I am part of the <a href="https://machineteaching.ca/" target="_blank" rel="noopener">Machine Teaching and Human Intelligence Research Group</a> at McMaster University, supervised by <a href="https://swati-mishra.com/" target="_blank" rel="noopener">Dr. Swati Mishra</a>.
+        My interests lie in human-centered artificial intelligence, societal impacts of machine learning systems, operations research, and other relevant fields.
+        
+        <p>In related work, we developed "STORYBLOCKS" - an interactive framework that utilizes Socratic Questioning technique and combinatorial optimization to assist writers with complex idea exploration and narrative structure planning. The result of this project have been written up in a <strong>first-author paper</strong> and is under review for <a href="https://chi2026.acm.org/" target="_blank" rel="noopener">CHI 2026</a>, the top conference in Human-Computer Interaction.</p>
+        <p>
+        My current research explores how recommender systems shape online news exposure and their role in creating or mitigating filter bubbles. Complementing this, I am also investigating how user behaviors impact the system performance in a personalized news recommendation setting.
+        </p> 
+        <p class="note">
+          Note: Due to the ongoing review process, the content of this paper cannot be publicly disclosed at this time.
+        </p>
+      </section>
+
+      <hr />
+
+      <section id="teaching">
+        <h2>Teaching</h2>
+        <div class="cards">
+          <div class="card">
+            <h4>COMPSCI 2C03: Data Structures and Algorithms (TA)</h4>
+            <li>Instructing 40+ students in class, topics include data structures, graph representations and algorithms, algorithmic design strategies, correctness and performance analysis.</li>
+            <li> Prepare and present in-depth course slides for weekly tutorial sessions and lead after-class discussions to guide students through practice problems and answer questions, developing strong teaching, class management and problem-solving skills.</li>
+            <li>In charge of marking and providing feedback on weekly assignments and exams.</li>
+          </div>
+          
+          <!-- <div class="card">
+            <h4>CS 456: HCI (TA)</h4>
+            <p>Co-authored labs on prototyping and user studies.</p>
+          </div> -->
+        </div>
+        <br>
+        <div class="card">
+          <h4>COMPSCI 3AC3: Algorithms and complexity (TA, starting Jan 2026)</h4>
+          <li>Topics include Church-Turing thesis, complexity classes; reduction techniques; algorithmic design strategies; flows, distributed algorithms, advanced techniques such as randomization.</li>
+          <li>Responsibilities include: tutorial hosting, after-class discussions, assignments and exams marking and office hours</li>
         </div>
       </section>
 
-      <section aria-labelledby="data-driven">
-        <h3 id="data-driven">A data-driven personal website</h3>
-        <p>
-          Like many Jekyll-based templates, this approach separates content from form. Write in
-          Markdown; templates transform your posts, pages, and metadata into HTML. Each commit you
-          push to your public repo triggers GitHub Pages to rebuild and deploy your site.
-        </p>
-        <p class="note">
-          Tip: keep your Markdown and assets under version control so you can safely roll back
-          changes at any time.
-        </p>
+      <hr />
+
+      <section id="projects">
+        <h2>Projects</h2>
+        <div class="card">
+          <h4>Analyzing Recommender Systems’ Effects on Filter Bubbles (<a href="./recommender_filter_bubble.pdf">Paper</a>)</h4>
+          <p>This paper explores how recommender systems shape news exposure and whether they create “filter bubbles” - the phenomenon where excessive content provided by recommender systems reinforces users’ pre-existing perspectives and beliefs. Using a collaborative filtering model and user studies, I found the system did not strongly reinforce bias: participants saw a mix of perspectives, and some even shifted their views. The findings suggest filter bubbles depend not only on algorithms but also on user choices, highlighting the need to design recommenders that balance personalization with diversity.</p>
+          <!-- <p>Recommender systems play a central role in shaping online news consumption, yet their potential to create “filter bubbles” remains contested. This study investigates how collaborative filtering-based recommenders influence ideological exposure in personalized news environments and how user behaviour mediates these effects. This research primarily examines biases and fairness in AI systems, with a focus on how recommendation algorithms contribute to the exposure of ideological content and its broader social implications. </p>
+          <p>Interestingly, the system did not strongly reinforce bias—participants were exposed to a mix of perspectives, and some even shifted their opinions after the study. The results suggest that filter bubbles are not just about algorithms, but also about how people choose to engage with content. This highlights the importance of designing recommender systems that balance personalization with exposure to diverse viewpoints.</p> -->
+        </div>
       </section>
 
-      <section class="grid two" aria-labelledby="popular-tools">
+      <hr />
+
+      <section id="portfolio">
+        <h2>Portfolio</h2>
+        <div class="grid two">
+          <!-- <img class="tile" src="/no_peeking.png" alt="STORYBLOCKS Project Screenshot" /><span>Storyblocks(coming soon)</span>
+          <img class="tile" src="/lift4kids.jpg" alt="fitness event photo" /><span>Deadlifting(455lbs) at MOVE 4 Kids event</span>
+          <img class="tile" src="https://via.placeholder.com/600x360.png?text=Demo" alt="System demo" /><span>Recommender Demo</span> -->
+          <div class="tile">
+            <img src="/no_peeking.png" alt="STORYBLOCKS Project Screenshot" />
+            <span>STORYBLOCKS system demo (coming soon)</span>
+          </div>
+          <div class="tile">
+            <img src="/lift4kids.jpg" alt="fitness event photo" />
+            <span>Deadlifting (455lbs) at MOVE 4 Kids fundraising event</span>
+          </div>
+          <!-- <div class="tile">
+            <img src="https://via.placeholder.com/600x360.png?text=Demo" alt="System demo" />
+            <span>Recommender Demo</span>
+          </div> -->
+        </div>
+      </section>
+
+            <!-- <section class="grid two" aria-labelledby="popular-tools">
         <div>
           <h3 id="popular-tools">Popular tools</h3>
           <ul>
@@ -103,12 +171,11 @@
             <li>Enable Pages in the repo settings (if needed).</li>
           </ol>
         </div>
-      </section>
+      </section> -->
 
-      <hr />
 
       <!-- Anchor sections -->
-      <section id="publications" aria-labelledby="pubs">
+      <!-- <section id="publications" aria-labelledby="pubs">
         <h2 id="pubs">Publications</h2>
         <article class="pub">
           <h4>Example Paper Title</h4>
@@ -130,30 +197,9 @@
           <li>Invited talk at Somewhere (2025) — <a href="#">Slides</a></li>
           <li>Guest lecture on Recommenders (2024) — <a href="#">Recording</a></li>
         </ul>
-      </section>
+      </section> -->
 
-      <section id="teaching">
-        <h2>Teaching</h2>
-        <div class="cards">
-          <div class="card">
-            <h4>CS 123: Algorithms (TA)</h4>
-            <p>Led weekly tutorials, designed worksheets, and graded assignments.</p>
-          </div>
-          <div class="card">
-            <h4>CS 456: HCI (TA)</h4>
-            <p>Co-authored labs on prototyping and user studies.</p>
-          </div>
-        </div>
-      </section>
-
-      <section id="portfolio">
-        <h2>Portfolio</h2>
-        <div class="grid three">
-          <a class="tile" href="#"><img src="https://via.placeholder.com/600x360.png?text=Project+Screenshot" alt="Project screenshot" /><span>Storyblocks</span></a>
-          <a class="tile" href="#"><img src="https://via.placeholder.com/600x360.png?text=Visualization" alt="Visualization example" /><span>Visualization Toolkit</span></a>
-          <a class="tile" href="#"><img src="https://via.placeholder.com/600x360.png?text=Demo" alt="System demo" /><span>Recommender Demo</span></a>
-        </div>
-      </section>
+      <!-- 
 
       <section id="blog">
         <h2>Blog Posts</h2>
@@ -163,10 +209,7 @@
         </ul>
       </section>
 
-      <section id="cv">
-        <h2>CV</h2>
-        <p>Download a PDF version of my CV: <a href="#">CV.pdf</a></p>
-      </section>
+      
 
       <section id="guide">
         <h2>Guide</h2>
@@ -177,10 +220,10 @@
           <li>Tweak colors, spacing, and layout in <code>styles.css</code>.</li>
           <li>Add Markdown pages later using Jekyll if you want (optional).</li>
         </ul>
-      </section>
+      </section> -->
 
       <footer class="site-footer">
-        <p>© <span id="year"></span> Your Name. Built with GitHub Pages.</p>
+        <p>© <span id="year"></span> Jason Xu</p>
       </footer>
     </main>
   </div>
