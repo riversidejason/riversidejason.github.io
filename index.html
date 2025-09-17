@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Your Name — Academic Portfolio</title>
+  <meta name="description" content="Academic portfolio of Your Name: publications, talks, teaching, portfolio, blog, CV, and guide." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="brand">
+      <a href="/" class="site-title">Your Name / Site Title</a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="topnav">
+        ☰
+        <span class="sr-only">Toggle navigation</span>
+      </button>
+    </div>
+    <nav id="topnav" class="topnav" aria-label="Top">
+      <a href="#publications">Publications</a>
+      <a href="#talks">Talks</a>
+      <a href="#teaching">Teaching</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#blog">Blog Posts</a>
+      <a href="#cv">CV</a>
+      <a href="#guide">Guide</a>
+    </nav>
+  </header>
+
+  <div class="layout">
+    <!-- Sidebar -->
+    <aside class="sidebar" aria-label="Profile">
+      <div class="card profile">
+        <img class="avatar" src="https://via.placeholder.com/160x160.png?text=Photo" alt="Your portrait" />
+        <h1>Your Sidebar Name</h1>
+        <p class="muted">Short biography for the left-hand sidebar. One or two sentences works well.</p>
+
+        <ul class="links">
+          <li><a href="#" target="_blank" rel="noopener">🌍 Earth</a></li>
+          <li><a href="#" target="_blank" rel="noopener">🏫 Red Brick University</a></li>
+          <li><a href="mailto:you@email.com">✉️ Email</a></li>
+          <li><a href="#" target="_blank" rel="noopener">🔎 Google Scholar</a></li>
+          <li><a href="#" target="_blank" rel="noopener">🧑‍🔬 ORCID</a></li>
+          <li><a href="#" target="_blank" rel="noopener">📚 PubMed</a></li>
+          <li><a href="https://github.com/yourusername" target="_blank" rel="noopener">🐙 GitHub</a></li>
+          <li><a href="#" target="_blank" rel="noopener">📰 Bluesky</a></li>
+        </ul>
+      </div>
+
+      <div class="card mini">
+        <h2>Contact</h2>
+        <p><strong>Office:</strong> Room 123, CS Building</p>
+        <p><strong>Office Hours:</strong> Wed 2–4pm</p>
+      </div>
+    </aside>
+
+    <!-- Main content -->
+    <main id="main" class="content">
+      <section class="hero">
+        <h2>Academic Pages is a ready-to-fork GitHub Pages template for academic personal websites</h2>
+        <p>
+          This is the front page of a website built with GitHub Pages. You can fork this starter,
+          modify the configuration and Markdown files, add your own PDFs and other content, and have
+          your site live for free—no ads!
+        </p>
+        <div class="cta-row">
+          <a class="btn primary" href="#guide">Read the Guide</a>
+          <a class="btn" href="#portfolio">See Portfolio</a>
+        </div>
+      </section>
+
+      <section aria-labelledby="data-driven">
+        <h3 id="data-driven">A data-driven personal website</h3>
+        <p>
+          Like many Jekyll-based templates, this approach separates content from form. Write in
+          Markdown; templates transform your posts, pages, and metadata into HTML. Each commit you
+          push to your public repo triggers GitHub Pages to rebuild and deploy your site.
+        </p>
+        <p class="note">
+          Tip: keep your Markdown and assets under version control so you can safely roll back
+          changes at any time.
+        </p>
+      </section>
+
+      <section class="grid two" aria-labelledby="popular-tools">
+        <div>
+          <h3 id="popular-tools">Popular tools</h3>
+          <ul>
+            <li><strong>MathJax</strong> for equations</li>
+            <li><strong>Mermaid</strong> for diagrams</li>
+            <li><strong>Plotly</strong> for plotting</li>
+          </ul>
+        </div>
+        <div class="callout">
+          <h4>Getting started</h4>
+          <ol>
+            <li>Create a public repo (e.g., <code>yourusername.github.io</code>).</li>
+            <li>Add these files, commit, and push.</li>
+            <li>Enable Pages in the repo settings (if needed).</li>
+          </ol>
+        </div>
+      </section>
+
+      <hr />
+
+      <!-- Anchor sections -->
+      <section id="publications" aria-labelledby="pubs">
+        <h2 id="pubs">Publications</h2>
+        <article class="pub">
+          <h4>Example Paper Title</h4>
+          <p class="muted">Your Name, Coauthor Name — Conference ’25</p>
+          <p>
+            One-sentence summary of the contribution. <a href="#">PDF</a> · <a href="#">Code</a> · <a href="#">BibTeX</a>
+          </p>
+        </article>
+        <article class="pub">
+          <h4>Another Work with a Longer Title That Wraps Nicely</h4>
+          <p class="muted">Your Name — Journal of Examples, 2024</p>
+          <p>Short abstract or teaser. <a href="#">PDF</a></p>
+        </article>
+      </section>
+
+      <section id="talks">
+        <h2>Talks</h2>
+        <ul class="bullets">
+          <li>Invited talk at Somewhere (2025) — <a href="#">Slides</a></li>
+          <li>Guest lecture on Recommenders (2024) — <a href="#">Recording</a></li>
+        </ul>
+      </section>
+
+      <section id="teaching">
+        <h2>Teaching</h2>
+        <div class="cards">
+          <div class="card">
+            <h4>CS 123: Algorithms (TA)</h4>
+            <p>Led weekly tutorials, designed worksheets, and graded assignments.</p>
+          </div>
+          <div class="card">
+            <h4>CS 456: HCI (TA)</h4>
+            <p>Co-authored labs on prototyping and user studies.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="portfolio">
+        <h2>Portfolio</h2>
+        <div class="grid three">
+          <a class="tile" href="#"><img src="https://via.placeholder.com/600x360.png?text=Project+Screenshot" alt="Project screenshot" /><span>Storyblocks</span></a>
+          <a class="tile" href="#"><img src="https://via.placeholder.com/600x360.png?text=Visualization" alt="Visualization example" /><span>Visualization Toolkit</span></a>
+          <a class="tile" href="#"><img src="https://via.placeholder.com/600x360.png?text=Demo" alt="System demo" /><span>Recommender Demo</span></a>
+        </div>
+      </section>
+
+      <section id="blog">
+        <h2>Blog Posts</h2>
+        <ul class="posts">
+          <li><time datetime="2025-08-01">Aug 1, 2025</time> <a href="#">How I built this site with GitHub Pages</a></li>
+          <li><time datetime="2025-06-14">Jun 14, 2025</time> <a href="#">Reproducible experiments in ML</a></li>
+        </ul>
+      </section>
+
+      <section id="cv">
+        <h2>CV</h2>
+        <p>Download a PDF version of my CV: <a href="#">CV.pdf</a></p>
+      </section>
+
+      <section id="guide">
+        <h2>Guide</h2>
+        <p>A quick guide on how to customize this template: edit the navigation, replace placeholder
+           content, and publish.</p>
+        <ul class="bullets">
+          <li>Update your name, links, and sections in <code>index.html</code>.</li>
+          <li>Tweak colors, spacing, and layout in <code>styles.css</code>.</li>
+          <li>Add Markdown pages later using Jekyll if you want (optional).</li>
+        </ul>
+      </section>
+
+      <footer class="site-footer">
+        <p>© <span id="year"></span> Your Name. Built with GitHub Pages.</p>
+      </footer>
+    </main>
+  </div>
+
+  <script>
+    // Small progressive enhancement for mobile nav & year stamp
+    const btn = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('#topnav');
+    if (btn && nav) {
+      btn.addEventListener('click', () => {
+        const open = btn.getAttribute('aria-expanded') === 'true';
+        btn.setAttribute('aria-expanded', String(!open));
+        nav.classList.toggle('open');
+      });
+    }
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
