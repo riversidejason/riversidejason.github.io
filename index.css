@@ -71,7 +71,7 @@ body{
   max-width: var(--content-w);
   margin: 0 auto;
   margin-top: -3.5rem; 
-  margin-left: 20rem;
+  /* margin-left: 20rem; */
   padding: 0 1rem;
   font-size: 1.1rem;     /* Increase size */
   /* font-weight: bold;      Make text bold */
