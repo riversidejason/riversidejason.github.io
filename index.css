@@ -191,7 +191,7 @@ h3{ font-size: 1.25rem; margin: 1.25rem 0 .5rem; }
 h4{ margin: .25rem 0 .25rem; }
 
 .note{
-  background: var(--card); border-left: 4px solid var(--brand);
+  background: var(--bg); border-left: 4px solid var(--brand);
   padding: .75rem 1rem; border-radius: 8px;
   margin-left: -0.75rem
 }
