@@ -55,7 +55,7 @@ body{
   border-bottom: 1px solid var(--border);
 }
 .site-header .brand{
-  /* position: relative; */
+  position: relative;
   max-width: var(--content-w);
   margin: 0 auto;
   padding: .75rem 1rem;
@@ -64,7 +64,7 @@ body{
 }
 .header-img{
   position: absolute;
-  right: 22rem;
+  right: 1rem;
   top: 50%;
   transform: translateY(-50%);
   height: 145px;     /* pick your visual size */
