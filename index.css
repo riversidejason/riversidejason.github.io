@@ -123,22 +123,11 @@ body{
 /* Mobile header/nav behavior */
 @media (max-width: 899px){
   /* Make the logo smaller on phones */
-  .header_and_image{
-    position: relative;   /* anchor for absolute logo */
-  }
-
   .header-img{
-    position: absolute;
-    top: .6rem;           /* adjust */
-    right: 1rem;          /* align to content padding */
-    height: 56px;         /* mobile size */
+    height: 72px;   /* try 56–80 */
     width: auto;
   }
-
-  .brand{
-    padding-right: 84px;  /* leave room so text/nav doesn't run under logo */
-  }
-}
+  .nav-toggle{ display: none; }
 
   /* Hide nav by default; show only when toggled open */
   .topnav{
