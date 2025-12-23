@@ -127,7 +127,6 @@ body{
     height: 72px;   /* try 56–80 */
     width: auto;
   }
-  .nav-toggle{ display: none; }
 
   /* Hide nav by default; show only when toggled open */
   .topnav{
