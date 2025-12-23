@@ -58,16 +58,16 @@ body{
   position: relative;
   max-width: var(--content-w);
   margin: 0 auto;
-  padding: .75rem 1rem;
+  padding: .65rem 1rem .25rem;
   display: flex; align-items: center; justify-content: space-between;
   gap: 1rem;
 }
 .header-img{
-  position: absolute;
-  right: 1rem;
-  top: 50%;
-  transform: translateY(-50%);
-  height: 145px;     /* pick your visual size */
+  /* position: relative; */
+  /* right: 1rem; */
+  /* top: 50%;
+  transform: translateY(-50%); */
+  height: 130px;     /* pick your visual size */
   width: auto;
 }
 .site-title{
@@ -76,12 +76,12 @@ body{
   margin-left: -1.4rem;
 }
 .topnav{
-  display: none;
+  /* display:; */
   border-top: 1px solid var(--border);
   max-width: var(--content-w);
   margin: 0 auto;
-  margin-top: -3.5rem; 
-  margin-left: 20rem;
+  /* margin-top: -3.5rem;  */
+  /* margin-left: 20rem; */
   padding: 0 1rem;
   font-size: 1.1rem;     /* Increase size */
   /* font-weight: bold;      Make text bold */
@@ -90,7 +90,7 @@ body{
 .topnav.open{ display: block; }
 .topnav a{
   display: inline-block;
-  padding: .75rem 1rem;
+  padding: .4rem 1rem;
   text-decoration: none;
   color: var(--muted);
 }
