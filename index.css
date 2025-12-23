@@ -128,6 +128,9 @@ body{
     width: auto;
     position: absolute;
   }
+  .header_and_image{
+    position: relative;   /* anchor for absolute logo */
+  }
 
   /* Hide nav by default; show only when toggled open */
   .topnav{
