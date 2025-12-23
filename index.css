@@ -120,6 +120,30 @@ body{
   /* .site-header .brand{ padding: 1rem; } */
 }
 
+/* Mobile header/nav behavior */
+@media (max-width: 899px){
+  /* Make the logo smaller on phones */
+  .header-img{
+    height: 72px;   /* try 56–80 */
+    width: auto;
+  }
+
+  /* Hide nav by default; show only when toggled open */
+  .topnav{
+    display: none;
+    padding: .25rem 1rem .5rem;
+  }
+  .topnav.open{
+    display: block;
+  }
+
+  /* Make links stack vertically (easy to tap) */
+  .topnav a{
+    display: block;
+    padding: .5rem 0;
+  }
+}
+
 /* ===== Layout ===== */
 .layout{
   max-width: var(--content-w);
