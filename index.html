@@ -21,6 +21,7 @@
         ☰
         <span class="sr-only">Toggle navigation</span>
       </button>
+      <img class="header-img" src="duoduo_tongue_transparent.png" alt="Logo">
     </div>
     <nav id="topnav" class="topnav" aria-label="Top">
       <a href="#about">About</a>
@@ -91,7 +92,6 @@
         My current research project explores how recommender systems shape online news exposure and their role in creating or mitigating filter bubbles. Complementing this, I also investigate how user agency influences system performance in personalized recommendation settings, as well as the effectiveness of both passive and active interventions in mitigating self-imposed filter bubbles. More broadly, my work focuses on the design of transparent, responsible, and user-centered AI systems that balance news personalization with diversity and critical engagement.
         </p> 
         <p>For completed and published projects, please see the <strong>Projects</strong> section below.</p>
-        <!-- <p>In related work, we developed "STORYBLOCKS" - an interactive framework that utilizes Socratic Questioning technique and combinatorial optimization to assist writers with complex idea exploration and narrative structure planning. The result of this project has been written up in a <strong>first-author paper</strong> and is under review for <a href="https://chi2026.acm.org/" target="_blank" rel="noopener">CHI 2026</a>, the top conference in Human-Computer Interaction.</p> -->
        
       </section>
 
@@ -100,11 +100,17 @@
       <section id="projects">
         <h2>Projects</h2>
         <div class="card">
-          <h4>Storyblocks: Towards AI-Assisted Narrative Design for Data-Driven Storytelling (CHI 2026 Paper)</h4>
+          <h4>StoryBlocks: Towards AI-Assisted Narrative Design for Data-Driven Storytelling (CHI 2026 Paper)</h4>
           <p><strong>Yaning(Jason) Xu</strong>, Sasha Robinson, Pranav Kalsi, Swati Mishra </p>
-          <p>This project presents STORYBLOCKS, an inquiry-guided interactive system for data-driven storytelling that supports writers in structuring and refining narrative designs. It utilizes Socratic Questioning technique and combinatorial optimization to assist writers with complex data exploration and personalized story construction with real-time feedback. Our system represents narratives as interconnected building blocks, and introduces a novel rendering algorithm that transforms non-linear narrative plans into linear story flows. Through a user study with novice data storytellers, the project evaluates how inquiry-guided interaction shapes writers’ ideation, reflection, and narrative refinement, offering valuable insights for future work in human–AI collaboration for narrative design.</p>
+          <p>In this project we present StoryBlocks, an inquiry-guided interactive system for data-driven storytelling that supports writers in structuring and refining narrative designs. It utilizes Socratic Questioning technique and combinatorial optimization to assist writers with complex data exploration and personalized story construction with real-time feedback. Our system represents narratives as interconnected building blocks, and introduces a novel rendering algorithm that transforms non-linear narrative plans into linear story flows. Through a user study with novice data storytellers, the project evaluates how inquiry-guided interaction shapes writers’ ideation, reflection, and narrative refinement, offering valuable insights for future work in human–AI collaboration for narrative design.</p>
           <p class="note">
-          Note: Due to the ongoing review process, the content of this paper cannot be publicly disclosed at this time.
+          Note (Under Review): Due to the ongoing review process, the content of this paper cannot be publicly disclosed at this time.
+          However, selected system design and interface figures are shared below to illustrate the core interaction concepts.
+          <br>
+          <br>
+          <button class="btn primary" type="button" id="open-storyblocks-figs">
+            View system & interface figures
+          </button>
         </p>
         </div>
         <br>
@@ -125,17 +131,21 @@
         <div class="cards">
           <div class="card">
             <h4>COMPSCI 2C03: Data Structures and Algorithms (TA, Sept 2025 - Dec 2025)</h4>
+            <ul class="bullets">
             <li>Instructing 40+ students in class, topics include data structures, graph representations and algorithms, algorithmic design strategies, correctness and performance analysis.</li>
             <li> Prepare and present in-depth course slides for weekly tutorial sessions and lead after-class discussions to guide students through practice problems and answer questions, developing strong teaching, class management and problem-solving skills.</li>
             <li>In charge of marking and providing feedback on weekly assignments and exams.</li>
+            </ul>
           </div>
 
         </div>
         <br>
         <div class="card">
           <h4>COMPSCI 3AC3: Algorithms and complexity (TA, Jan 2026 - Apr 2026)</h4>
-          <li>Topics include Church-Turing thesis, complexity classes; reduction techniques; algorithmic design strategies; flows, distributed algorithms, advanced techniques such as randomization.</li>
-          <li>Responsibilities include: tutorial hosting, after-class discussions, assignments and exams marking and office hours</li>
+          <ul class="bullets">
+            <li>Topics include Church-Turing thesis, complexity classes; reduction techniques; algorithmic design strategies; flows, distributed algorithms, advanced techniques such as randomization.</li>
+            <li>Responsibilities include: tutorial hosting, after-class discussions, assignments and exams marking and office hours</li>
+          </ul>
         </div>
       </section>
 
@@ -150,8 +160,8 @@
           <img class="tile" src="/lift4kids.jpg" alt="fitness event photo" /><span>Deadlifting(455lbs) at MOVE 4 Kids event</span>
           <img class="tile" src="https://via.placeholder.com/600x360.png?text=Demo" alt="System demo" /><span>Recommender Demo</span> -->
           <div class="tile">
-            <img src="/no_peeking.png" alt="STORYBLOCKS Project Screenshot" />
-            <span>STORYBLOCKS system demo (coming soon)</span>
+            <img src="/no_peeking.png" alt="coming soon" />
+            <span> Filter bubble experiment demo (coming soon)</span>
           </div>
           <div class="tile">
             <img src="/lift4kids.jpg" alt="fitness event photo" />
@@ -230,18 +240,109 @@
     </main>
   </div>
 
-  <script>
-    // Small progressive enhancement for mobile nav & year stamp
-    const btn = document.querySelector('.nav-toggle');
-    const nav = document.querySelector('#topnav');
-    if (btn && nav) {
-      btn.addEventListener('click', () => {
-        const open = btn.getAttribute('aria-expanded') === 'true';
-        btn.setAttribute('aria-expanded', String(!open));
-        nav.classList.toggle('open');
-      });
-    }
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+
+
+    <!-- Navigation for figures -->
+   <dialog id="figModal" class="fig-modal" aria-label="Project figures">
+  <div class="fig-modal__header">
+    <h3 id="figModalTitle">StoryBlocks — System Architecture; Interface Design; Functionality & Story Archetypes</h3>
+    <button class="btn" type="button" id="closeFigModal">Close</button>
+  </div>
+
+  <div class="fig-modal__body">
+    <button class="fig-nav" type="button" id="prevFig" aria-label="Previous image">◀</button>
+
+    <figure class="fig-frame">
+      <img id="figModalImg" src="" alt="">
+      <figcaption id="figModalCaption" class="muted"></figcaption>
+    </figure>
+
+    <button class="fig-nav" type="button" id="nextFig" aria-label="Next image">▶</button>
+  </div>
+</dialog>
+
+<script>
+  // Small progressive enhancement for mobile nav & year stamp
+  const btn = document.querySelector('.nav-toggle');
+  const nav = document.querySelector('#topnav');
+  if (btn && nav) {
+    btn.addEventListener('click', () => {
+      const open = btn.getAttribute('aria-expanded') === 'true';
+      btn.setAttribute('aria-expanded', String(!open));
+      nav.classList.toggle('open');
+    });
+  }
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // ===== Storyblocks figures modal =====
+  const openFigsBtn = document.getElementById('open-storyblocks-figs');
+  const figModal = document.getElementById('figModal');
+  const closeFigModal = document.getElementById('closeFigModal');
+
+  const figImg = document.getElementById('figModalImg');
+  const figCaption = document.getElementById('figModalCaption');
+  const prevFig = document.getElementById('prevFig');
+  const nextFig = document.getElementById('nextFig');
+
+  // Update these paths + captions to match your files
+  const storyblocksFigures = [
+    { src: "./storyblocks_system.svg", alt: "System architecture", caption: "StoryBlocks is an interactive environment supporting narrative design for data driven storytelling." },
+    { src: "./storyblocks_interface.svg", alt: "Interface design", caption: "Our interface supports a node-based hierarchical structure for non-linear story planning." },
+    { src: "./storyblocks_function.svg", alt: "functionality", caption: "The key interactions for StoryBlocks " },
+    { src: "./storyblocks_story.svg", alt: "story archetypes", caption: "The three story archetypes identified in our user studies—question-centric, observation-centric, and visual-centric—along with their linearized prototypes generated by our story renderer. All stories are taken from real user studies." }
+  ];
+
+  let figIndex = 0;
+
+  function renderFigure(i){
+    const item = storyblocksFigures[i];
+    figImg.src = item.src;
+    figImg.alt = item.alt;
+    figCaption.textContent = item.caption || "";
+  }
+
+  function openModalAt(i){
+    figIndex = i;
+    renderFigure(figIndex);
+    figModal.showModal();
+  }
+
+  function step(delta){
+    figIndex = (figIndex + delta + storyblocksFigures.length) % storyblocksFigures.length;
+    renderFigure(figIndex);
+  }
+
+  if (openFigsBtn) {
+    openFigsBtn.addEventListener('click', () => openModalAt(0));
+  }
+
+  prevFig.addEventListener('click', () => step(-1));
+  nextFig.addEventListener('click', () => step(1));
+
+  closeFigModal.addEventListener('click', () => figModal.close());
+
+  // Close when clicking outside the dialog content
+  figModal.addEventListener('click', (e) => {
+    const rect = figModal.getBoundingClientRect();
+    const inDialog =
+      e.clientX >= rect.left && e.clientX <= rect.right &&
+      e.clientY >= rect.top && e.clientY <= rect.bottom;
+    if (!inDialog) figModal.close();
+  });
+
+  // Keyboard shortcuts: left/right arrows to navigate when open
+  document.addEventListener('keydown', (e) => {
+    if (!figModal.open) return;
+    if (e.key === 'ArrowLeft') step(-1);
+    if (e.key === 'ArrowRight') step(1);
+  });
+</script>
+
+
+
+
+
+
+
 </body>
 </html>
