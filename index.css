@@ -126,6 +126,7 @@ body{
   .header-img{
     height: 72px;   /* try 56–80 */
     width: auto;
+    position: absolute;
   }
 
   /* Hide nav by default; show only when toggled open */
