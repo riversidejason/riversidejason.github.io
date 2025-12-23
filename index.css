@@ -131,6 +131,13 @@ body{
 
   /* Optional: tighten header spacing since nav is gone */
   .header_and_image{ padding: .5rem 1rem; }
+  
+  .card,
+  .hero,
+  .note
+  { margin-left: 0; }
+  .layout{ padding-left: 1rem;
+    padding-right: 1rem; }
 }
 
 /* ===== Layout ===== */
